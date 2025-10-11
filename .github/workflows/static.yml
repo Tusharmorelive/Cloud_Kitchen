@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>श्रुती'ज किचन</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        body { 
+            background: linear-gradient(135deg, #ff6600, #ff9933);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 15px;
+        }
+        .container {
+            width: 100%;
+            max-width: 350px;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        }
+        .header {
+            background: linear-gradient(135deg, #ff6600, #ff9933);
+            padding: 20px 15px;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+        .header h1 {
+            font-size: 1.6rem;
+            margin-bottom: 5px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .header p {
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+            opacity: 0.95;
+        }
+        .cloud-kitchen {
+            background: white;
+            color: #ff6600;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-weight: bold;
+            font-size: 0.8rem;
+            display: inline-block;
+            margin-top: 8px;
+        }
+        .content {
+            padding: 15px;
+        }
+        .intro {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .intro p {
+            font-size: 0.9rem;
+            line-height: 1.4;
+            margin-bottom: 8px;
+            color: #333;
+        }
+        .order-btn {
+            display: inline-block;
+            background: #ff6600;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            margin-top: 5px;
+            box-shadow: 0 4px 10px rgba(255,102,0,0.4);
+        }
+        .menu-section {
+            background: #fff8f0;
+            padding: 15px;
+            border-radius: 15px;
+            margin-bottom: 15px;
+        }
+        .menu-title {
+            text-align: center;
+            color: #ff6600;
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+            font-weight: bold;
+        }
+        .menu-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            list-style: none;
+        }
+        .menu-item {
+            padding: 8px 10px;
+            background: white;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-left: 3px solid #ff9933;
+        }
+        .food-icon {
+            font-size: 1rem;
+            margin-right: 8px;
+            color: #ff6600;
+        }
+        .vade-icon {
+            width: 16px;
+            height: 16px;
+            background: #ffcc33;
+            border-radius: 50%;
+            margin-right: 8px;
+            position: relative;
+        }
+        .vade-icon::before {
+            content: "";
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%,-50%);
+            width: 10px; height: 10px;
+            background: #ff9933;
+            border-radius: 50%;
+        }
+        .contact {
+            background: linear-gradient(135deg, #ff6600, #e05500);
+            padding: 20px 15px;
+            border-radius: 15px;
+            text-align: center;
+            color: white;
+        }
+        .contact h2 {
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+        }
+        .phone-number {
+            background: white;
+            color: #ff6600;
+            padding: 10px 15px;
+            border-radius: 25px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin: 10px 0;
+            display: inline-block;
+            letter-spacing: 1px;
+        }
+        .contact-buttons {
+            display: flex;
+            gap: 8px;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .contact-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            padding: 8px 15px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.8rem;
+        }
+        .call-btn {
+            background: white;
+            color: #ff6600;
+        }
+        .whatsapp-btn {
+            background: #25D366;
+            color: white;
+        }
+        .note {
+            text-align: center;
+            color: #666;
+            padding: 10px;
+            font-size: 0.75rem;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>श्रुती'ज किचन</h1>
+            <p>चविष्ट जेवण… थेट दारापर्यंत!</p>
+            <div class="cloud-kitchen">Cloud Kitchen</div>
+        </div>
+        
+        <div class="content">
+            <div class="intro">
+                <p>🍽️ कोंकणी चव, घरगुती स्वयंपाक</p>
+                <p>👉 आजच ऑर्डर करा</p>
+                <a href="tel:9167073695" class="order-btn">ऑर्डर करा</a>
+            </div>
+            
+            <div class="menu-section">
+                <div class="menu-title">🌟 आजचं मेन्यू</div>
+                <ul class="menu-grid">
+                    <li class="menu-item"><i class="food-icon fas fa-drumstick-bite"></i>Chicken Biryani</li>
+                    <li class="menu-item"><i class="food-icon fas fa-shrimp"></i>Kolambi Biryani</li>
+                    <li class="menu-item"><i class="food-icon fas fa-utensils"></i>Chicken Sukha</li>
+                    <li class="menu-item"><i class="food-icon fas fa-utensil-spoon"></i>Chicken Rassa</li>
+                    <li class="menu-item"><div class="vade-icon"></div>Kombadi Vade</li>
+                    <li class="menu-item"><i class="food-icon fas fa-fish"></i>Surmai Fry</li>
+                    <li class="menu-item"><i class="food-icon fas fa-fish"></i>Pomfret Fry</li>
+                    <li class="menu-item"><i class="food-icon fas fa-fish"></i>Bangda Fry</li>
+                    <li class="menu-item"><i class="food-icon fas fa-shrimp"></i>Kolambi Fry</li>
+                    <li class="menu-item"><i class="food-icon fas fa-shrimp"></i>Kolambi Masala</li>
+                    <li class="menu-item"><i class="food-icon fas fa-egg"></i>Anda Masala</li>
+                </ul>
+            </div>
+            
+            <div class="contact">
+                <h2>📞 ऑर्डरसाठी कॉल/WhatsApp</h2>
+                <div class="phone-number">91670 73695</div>
+                <div class="contact-buttons">
+                    <a href="tel:9167073695" class="contact-btn call-btn">
+                        <i class="fas fa-phone"></i>कॉल
+                    </a>
+                    <a href="https://wa.me/919167073695" class="contact-btn whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i>WhatsApp
+                    </a>
+                </div>
+            </div>
+            
+            <div class="note">
+                <p>सर्व पदार्थ ताजे तयार | ३०-४५ मिनिट डिलिव्हरी</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
