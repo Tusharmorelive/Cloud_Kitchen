@@ -226,6 +226,86 @@
             align-items: center;
         }
         
+        /* Diwali Greeting Section */
+        .diwali-greeting {
+            background: linear-gradient(135deg, #ff9933, #ff6600);
+            color: white;
+            padding: 25px 20px;
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 20px rgba(255, 102, 0, 0.4);
+            position: relative;
+            overflow: hidden;
+            border: 2px solid white;
+        }
+
+        .diwali-greeting::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" opacity="0.15"><path d="M0,0 L100,100 M100,0 L0,100" stroke="white" stroke-width="2"/></svg>');
+            background-size: cover;
+        }
+
+        .diwali-header {
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .diwali-icon {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            display: block;
+            animation: twinkle 2s infinite;
+            color: gold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .diwali-greeting h2 {
+            font-size: 1.8rem;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+            color: white;
+            font-weight: 700;
+        }
+
+        .diwali-message {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .closure-notice {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 15px;
+            border-radius: 12px;
+            margin: 15px 0;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #ff6600;
+            font-weight: bold;
+        }
+
+        .closure-notice h3 {
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+
+        .closure-notice p {
+            margin: 5px 0;
+            font-size: 1rem;
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.7; transform: scale(1.1); }
+        }
+
         /* Updated Contact Section */
         .contact {
             text-align: center;
@@ -525,6 +605,14 @@
                 width: 180px;
                 justify-content: center;
             }
+            
+            .diwali-greeting h2 {
+                font-size: 1.5rem;
+            }
+            
+            .diwali-message {
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
@@ -711,6 +799,25 @@
                     <li>Cloud Kitchen पासून २ किमी. पर्यांतच्या अंतरासाठी ५० रु. delivery charges द्यावे लागतील, आणि त्याच्यापुढे Porter किंवा Dunzo चे charges द्यावे लागतील.</li>
                     <li>१००० रु. च्या पुढील ऑर्डरसाठी ५०% पैसे (Advance) अगोदर द्यावे लागतील.</li>
                 </ul>
+            </div>
+            
+            <!-- Diwali Greeting Section -->
+            <div class="diwali-greeting">
+                <div class="diwali-header">
+                    <i class="diwali-icon fas fa-fire"></i>
+                    <h2>🎇 दिपावलीच्या हार्दिक शुभेच्छा! 🪔</h2>
+                </div>
+                
+                <div class="diwali-message">
+                    <p>प्रकाशाच्या या सणाच्या शुभ प्रसंगी, श्रुती'ज किचनकडून तुम्हाला आणि तुमच्या कुटुंबियांना दिपावलीच्या हार्दिक शुभेच्छा!</p>
+                    
+                </div>
+                
+                <div class="closure-notice">
+                    <h3>📅 दिवाळी सुट्टी</h3>
+                    <p>दिवाळी सुट्टीमुळे आमचे किचन</p>
+                    <p><strong>२१ ऑक्टोबर ते २८ ऑक्टोबर</strong> बंद राहील</p>
+                </div>
             </div>
             
             <!-- Updated Contact Section -->
